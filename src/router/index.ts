@@ -21,9 +21,34 @@ const routes: Array<RouteConfig> = [
     component: () => import('@/views/Login.vue')
   },
   {
-    path: ' /register',
+    path: '/register',
     name: 'Sign Up',
     component: ()=> import('@/views/Register.vue')
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: ()=> import('@/views/Settings.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: ()=> import('@/views/Profile.vue')
+  },
+  {
+    path: '/editarticle',
+    name: 'Edit Article',
+    component: ()=> import('@/views/EditArticle.vue')
+  },
+  {
+    path: '/create-article',
+    name: 'Create Article',
+    component: ()=> import('@/views/CreateArticle.vue')
+  },
+  {
+    path: '/article',
+    name: 'Article',
+    component: ()=> import('@/views/Article.vue')
   }
 ]
 
